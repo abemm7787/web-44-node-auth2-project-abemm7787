@@ -7,7 +7,7 @@ const usersRouter = require("./users/users-router.js");
 
 const server = express();
 
-server.use(helmet());
+server.use(helmet()); /// plenty middlewares in one and can configure
 server.use(express.json());
 server.use(cors());
 
